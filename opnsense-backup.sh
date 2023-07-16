@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# set variables for webcalls
-KEY="API Key"
-SECRET="API Secret"
-HOST="FQDN or IP of Host u want to Backup"
-PATHCONFIG="Path were the backupfiles should be stored"
+# API Key
+KEY=""
+# API Secret
+SECRET=""
+# FQDN or IP to opnsense host
+HOST=""
+# Path to where the Export should be saved to
+PATHCONFIG=""
+
+# Variable to Add to Name for unique naming for daily export
 DATE=$(date +%Y%m%d)
 
 # make the api request for config as xml and alias as json
