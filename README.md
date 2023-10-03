@@ -10,11 +10,7 @@ A Remote system for running the script and saving the output. <br />
 
 ## Setup OPNsense
 
-Install os-api-backup plugin on your OPNSense. <br />
-Create a User which will be used to create a API Key and give the proper permissions for the Backup script. <br />
-Only 2 Permissions are needed: Backup API and Firewall: Aliases. <br />
-In the context of this user u need to create the API Key. <br />
-The API Key is downloaded automatically to your PC and contains the API Key and the corresponding Secret.<br /><br />
+[Create OPNSense API Key and set permissions](https://github.com/ARC-XX/opnsense_api_config_backup/wiki/Create-OPNSense-API-Key-and-set-permissions)<br /><br />
     
 ## Example Config Debian
 Install the dependencies for debian to run the script
