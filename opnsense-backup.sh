@@ -13,7 +13,7 @@ PATHCONFIG=""
 DATE=$(date +%Y%m%d)
 
 # make the api request for config as xml and alias as json
-curl -s -u "${KEY}":"${SECRET}" https://"${HOST}"/api/backup/backup/download -o "${PATHCONFIG}"/opnsense/opnsense-config-"${DATE}".xml
+curl -u "${KEY}":"${SECRET}" https://"${HOST}"/api/core/backup/download/this -o "$PATHCONFIG"/opnsense/opnsense-config-"${DATE}".xml
 curl -s -u "${KEY}":"${SECRET}" https://"${HOST}"/api/firewall/alias/export | jq > "${PATHCONFIG}"/opnsense/opnsense-alias-"${DATE}".json
 
 # check the backup destination for backups older then 14 days

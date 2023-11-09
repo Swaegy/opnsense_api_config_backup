@@ -4,7 +4,7 @@ A bash script used to access the OPNsense API remotely to backup the configurati
 
 ## Requirements
 
-OPNSense instance with the os-api-backup plugin installed. <br />
+OPNSense os-api-backup is not needed since Update 23.7.8. <br />
 A Remote system for running the script and saving the output. <br />
 (Iam using Debian for example, curl needs to be installed and jq to fix the formatting of the alias backup)<br /><br />
 
@@ -29,8 +29,6 @@ Execute the script through crontab, in the example at 1 in the morning
 
 ## Sources
 https://docs.opnsense.org/development/how-tos/api.html
-
-https://docs.opnsense.org/development/api/plugins/backup.html
 
 https://docs.opnsense.org/development/api/core/firewall.html
 
