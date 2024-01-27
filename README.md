@@ -6,7 +6,7 @@ A bash script used to access the OPNsense API remotely to backup the configurati
 
 OPNSense os-api-backup is not needed since Update 23.7.8. <br />
 A Remote system for running the script and saving the output. <br />
-(Iam using Debian for example, curl needs to be installed and jq to fix the formatting of the alias backup)<br /><br />
+(Iam using Debian for example, curl needs to be installed)<br /><br />
 
 ## Setup OPNsense
 
@@ -15,7 +15,7 @@ A Remote system for running the script and saving the output. <br />
 ## Example Config Debian
 Install the dependencies for debian to run the script
 
-    $ sudo apt install curl jq
+    $ sudo apt install curl
 
 Make the script executable
 
@@ -32,9 +32,7 @@ https://docs.opnsense.org/development/how-tos/api.html
 
 https://docs.opnsense.org/development/api/core/firewall.html
 
-https://github.com/curl/curl
-
-https://github.com/stedolan/jq<br /><br />
+https://github.com/curl/curl<br /><br />
 
 ## Disclaimer
 
